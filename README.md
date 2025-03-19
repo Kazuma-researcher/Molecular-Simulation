@@ -5,18 +5,18 @@ MDシミュレーションそのものだけでなく、MDの導入に必要なL
   
 以下に、本マニュアルで主に使用する仮想環境、MDエンジン、エディタ、MD周辺アプリを記す。  
 
--仮想環境
-  -Ubuntu（VirtualBoxを使用）
--MDエンジン　　
-  -GROMACS
-  -LAMMPS
--エディタ
-  -VSCode
-  -Vim
--MD周辺アプリ
-  -PyMOL
-  -Packmol
-  -VMD
-  -CHARMMGUI
--その他
-  -Cellulose Builder
+- 仮想環境
+  - Ubuntu（VirtualBoxを使用）
+- MDエンジン　　
+  - GROMACS
+  - LAMMPS
+- エディタ
+  - VSCode
+  - Vim
+- MD周辺アプリ
+  - PyMOL
+  - Packmol
+  - VMD
+  - CHARMMGUI
+- その他
+  - Cellulose Builder

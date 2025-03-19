@@ -6,7 +6,7 @@ MDシミュレーションそのものだけでなく、MDの導入に必要なL
 以下に、本マニュアルで主に使用する仮想環境、MDエンジン、エディタ、MD周辺アプリを記す。  
 
 - 仮想環境
-  - Ubuntu（VirtualBoxを使用）
+  - Ubuntu（仮想マシンにはVirtualBoxを使用）
 - MDエンジン　　
   - GROMACS
   - LAMMPS

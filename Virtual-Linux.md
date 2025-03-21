@@ -7,7 +7,9 @@ Windows11にはLinux環境を提供するための仮想マシンである**Wind
 
 ## VirtualBoxのインストール
 [VirtualBoxのダウンロードページ](https://www.virtualbox.org/wiki/Downloads "Download VirtualBox")を開き、「VirtualBox Plaform Packages」の中から「Windows hosts」をクリックし、インストーラをダウンロード。  
+
 ![タイトルなし](https://github.com/user-attachments/assets/6cc80717-8179-4468-b224-6a55d77fcf29)
+<src >
 
 インストーラを実行し、画面の指示に従ってインストールを進める。基本的に何も変更しなくてよい。インストール完了後、VirutalBoxが自動的に開く。  
 
@@ -18,12 +20,42 @@ Ubuntuは最も広く使用されているLinuxディストリビューション
 
 いずれかのミラーサイトを開き、.isoのファイルをダウンロードする。これが、仮想マシンにロードするUbuntuのイメージファイルである。  
 
-![タイトルなし](https://github.com/user-attachments/assets/0f621ae2-fe7a-4f36-8fa9-afb4639a1eec)
+![タイトルなし](https://github.com/user-attachments/assets/009952d7-8580-4128-bc8a-52f728e02290)
 
 VirtualBoxを開き、"新規"をクリック。  
 
+![タイトルなし](https://github.com/user-attachments/assets/9f1fdbb4-0181-4180-86ef-ca53ef2457b3)
+
 仮想環境の名前とOSを入力する画面になる。「名前」には"Ubuntu"などの環境名を付ける。「Folder」は仮想環境内で作成されたファイルの保存先と思われる。特に希望がなければそのままでOK。「ISO Image」は、先ほどUbuntuのイメージファイルをダウンロードしたフォルダに移動し、ファイルを選ぶ。これらの入力が終わったら「次へ」をクリック。  
+
+![タイトルなし](https://github.com/user-attachments/assets/b7e32307-84c9-4200-9c3d-42ff2f560f2a)
 
 Ubuntuでログインするときのユーザー名やパスワードを設定する画面になる。「Username and Password」の欄を入力し、「次へ」をクリック。  
 
-Ubuntuの仮想的なメモリの量を設定する画面になる。
+![タイトルなし](https://github.com/user-attachments/assets/003b443b-0a5b-4a79-a5ab-f980c1eb4457)
+
+Ubuntuの仮想的なメモリの量とCPUのコア数を設定する画面になる。緑色の領域が推奨設定。筆者はメモリを2048MB、CPUを4としている。設定後、「次へ」をクリック。
+
+![タイトルなし](https://github.com/user-attachments/assets/18a9d26f-cc33-4d1a-a3b4-44084dadce57)
+
+Ubuntuの仮想的なハードディスク容量を設定する画面になる。筆者は25GBとしている。設定後、「次へ」をクリック。
+
+![タイトルなし](https://github.com/user-attachments/assets/5981c4ef-944b-4f03-afae-c6182c35057c)
+
+設定内容を確認する画面になる。問題なければ「完了」をクリック。これで仮想環境の設定が完了。　　
+
+![タイトルなし](https://github.com/user-attachments/assets/915c5192-0631-4f8d-8fa4-45c64394e3b4)
+
+VirtualBoxでUbuntuを選択し、「起動」もしくは起動ボタンの中の「通常起動」をクリック。  
+
+![タイトルなし](https://github.com/user-attachments/assets/f49b4408-1760-41ca-87c7-ad8908334ea2)
+
+初回起動時は以下のような画面が出るので、"Ubuntu with Japanese input support"を選択し、Enter。インストールが始まるので、完了するまで待つ。
+
+![タイトルなし](https://github.com/user-attachments/assets/64d11791-696f-4d16-b115-0074bb66706b)
+
+インストール完了後、ログイン画面となるので、先ほど設定したユーザー名を選択し、設定したパスワードを入力。
+
+<img src="https://github.com/user-attachments/assets/5703a985-3081-4cff-92f6-ac2b62e2ea1b" width="40%"> <img src="https://github.com/user-attachments/assets/75c9f1ee-9439-47fa-9fb6-e6439f471cc1" width="40%">
+
+以上で、Ubuntuの起動が完了。

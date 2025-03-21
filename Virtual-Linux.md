@@ -46,7 +46,7 @@ Ubuntuの仮想的なハードディスク容量を設定する画面になる�
 
 ![タイトルなし](https://github.com/user-attachments/assets/915c5192-0631-4f8d-8fa4-45c64394e3b4)
 
-VirtualBoxでUbuntuを選択し、「起動」もしくは起動ボタンの中の「通常起動」をクリック。  
+VirtualBoxでUbuntuを選択し、「起動」もしくは起動ボタンの中の「通常起動」をクリック。※初回起動時にエラーが発生する場合があり、その対処法は下の方に記述。  
 
 ![タイトルなし](https://github.com/user-attachments/assets/f49b4408-1760-41ca-87c7-ad8908334ea2)
 
@@ -58,4 +58,49 @@ VirtualBoxでUbuntuを選択し、「起動」もしくは起動ボタンの中�
 
 <img src="https://github.com/user-attachments/assets/5703a985-3081-4cff-92f6-ac2b62e2ea1b" width="40%"> <img src="https://github.com/user-attachments/assets/75c9f1ee-9439-47fa-9fb6-e6439f471cc1" width="40%">
 
-以上で、Ubuntuの起動が完了。
+以上で、Ubuntuの起動が完了。　　
+
+## 初回起動時のエラーへの対処
+VirutualBoxをインストールしてから初めて仮想環境を起動する際、`NtCreateFile(\Device\VBoxDrvStub) failed`のようなエラーダイアログが出ることがある。これはVirtualBoxのドライバが存在しないか起動していないことによるエラーである。以下に対処法を記す。  
+
+powershellを起動し、以下のコマンドを実行してドライバがインストールされているか確認。インストールされていれば概要が表示される。  
+
+```powershell
+> sc.exe query vboxsup
+```
+
+インストールされていない場合は、`C:\Program Files\Oracle\VirtualBox\drivers\vboxsup`ディレクトリの中にあるinfファイルを右クリックし、インストールを実行後、再起動。インストールされている場合はpowershell（管理者権限）で下記コマンドを実行し、ドライバを起動。  
+
+```powershell
+> sc.exe start vboxsup
+```
+
+## Ubuntuの日本語化
+日本語RemixのUbuntuをインストールしたが、実はこのままでは日本語対応になっていないため、日本語化設定をする必要がある。右上の電源マークから、「Settings」をクリック。  
+
+![タイトルなし](https://github.com/user-attachments/assets/d3fc2344-8434-4d47-b580-8055853ddbbf)
+
+「Region & Language」をクリックし、「Language」で「Japanese」を選択後、「Restart」をクリックして再起動。
+
+![タイトルなし](https://github.com/user-attachments/assets/ab9dbceb-fbf0-4675-92b7-79477da71bab)
+
+標準フォルダの名前を言語に合わせて更新するか選択。
+
+![タイトルなし](https://github.com/user-attachments/assets/9823ded3-bcaf-4667-8a64-4ec5bee972b8)
+
+以上で日本語化完了。
+
+## キーボード割り当ての変更
+デフォルトのキーボード割り当ては日本仕様になっていないため、これを変更する必要がある。メニューからターミナルを起動し、以下のコマンドを実行。  
+
+```bash
+$ sudo dpkg-reconfigure keyboard-configuration
+```
+以下のようにいくつかの画面が出るので、画像の通り選択。  
+
+<img src="https://github.com/user-attachments/assets/1c3893cb-df16-4380-ad1b-9fb264d389df" width="40%"> <img src="https://github.com/user-attachments/assets/861babc2-e6d0-4971-9d62-2c6af8cc7fbf" width="40%">
+<img src="https://github.com/user-attachments/assets/e8e59684-9163-48b5-9875-f47d44b21ab7" width="40%"> <img src="https://github.com/user-attachments/assets/b0d480ef-8c13-48da-ba43-e1f29eeb4d0b" width="40%">
+<img src="https://github.com/user-attachments/assets/3f8822ab-403e-48d8-949e-e6404ea789c6" width="40%"> <img src="https://github.com/user-attachments/assets/a73c2b2d-f486-43f5-9dd4-7252826b373f" width="40%">
+
+
+

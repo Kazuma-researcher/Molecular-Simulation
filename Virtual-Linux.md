@@ -7,6 +7,7 @@ Windows11にはLinux環境を提供するための仮想マシンである**Wind
 
 ## VirtualBoxのインストール
 [VirtualBoxのダウンロードページ](https://www.virtualbox.org/wiki/Downloads "Download VirtualBox")を開き、「VirtualBox Plaform Packages」の中から「Windows hosts」をクリックし、インストーラをダウンロード。  
+![タイトルなし](https://github.com/user-attachments/assets/15a63997-fbbe-4eaf-81e0-a2c8a4881605)
 
 インストーラを実行し、画面の指示に従ってインストールを進める。基本的に何も変更しなくてよい。インストール完了後、VirutalBoxが自動的に開く。  
 
@@ -18,6 +19,5 @@ VirtualBoxを開き、"新規"をクリック。
 仮想環境の名前とOSを入力する画面になる。「名前」には"Ubuntu"などの環境名を付ける。「Folder」は仮想環境内で作成されたファイルの保存先と思われる。特に希望がなければそのままでOK。「ISO Image」は、先ほどUbuntuのイメージファイルをダウンロードしたフォルダに移動し、ファイルを選ぶ。これらの入力が終わったら「次へ」をクリック。  
 
 Ubuntuでログインするときのユーザー名やパスワードを設定する画面になる。「Username and Password」の欄を入力し、「次へ」をクリック。  
-![image0](https://github.com/user-attachments/assets/3a82a783-6125-4c5a-9a64-bce19cbc76c3)
 
 Ubuntuの仮想的なメモリの量を設定する画面になる。

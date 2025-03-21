@@ -3,7 +3,7 @@ LinuxはオープンソースのOSであり、ソフト開発などの目的に�
 
 Linuxは上述のような柔軟性やカスタマイズ性に加え、高いセキュリティ性や安定性などの面から、サーバーのOSとして採用されることが多い。**シミュレーションソフトは基本的にサーバーを介した大規模・高速計算を想定していることから、Linux向けに作られたものがほとんどである。** したがって、WindowsPCでMDシミュレーションを行うには、Windows上に仮想的なLinux環境を構築する必要がある。これはWindowsPCの中に仮想的なPCを作成し、その中にLinuxをインストールするようなイメージである。この仮想的なPCのことを**仮想マシン**と呼ぶ。
 
-Windows11にはLinux環境を提供するための仮想マシンであるWindows Subsystem for Linux (WSL)がデフォルトで入っており、これを利用した仮想Linux環境の構築を解説しているサイトが多い。筆者も最初はWSLを利用していたが、WSLからインターネットにアクセスするとファイアウォールに引っかかってしまうためプロキシを通す必要があることや、Windows updateのたびに仮想Linux環境が壊れてしまうなどの問題点があったため、あまりおすすめしない。筆者はWSLに代わる仮想マシンとして、**VirtualBox**を使用した。VirtualBoxは使い方が非常に簡単で、その見た目から仮想マシンのイメージもつきやすいのでおすすめ。  
+Windows11にはLinux環境を提供するための仮想マシンである**Windows Subsystem for Linux (WSL)** がデフォルトで入っており、これを利用した仮想Linux環境の構築を解説しているサイトが多い。筆者も最初はWSLを利用していたが、WSLからインターネットにアクセスするとファイアウォールに引っかかってしまうためプロキシを通す必要があることや、Windows updateのたびに仮想Linux環境が壊れてしまうなどの問題点があったため、あまりおすすめしない。筆者はWSLに代わる仮想マシンとして、**VirtualBox**を使用した。VirtualBoxは使い方が非常に簡単で、その見た目から仮想マシンのイメージもつきやすいのでおすすめ。  
 
 ## VirtualBoxのインストール
 [VirtualBoxのダウンロードページ](https://www.virtualbox.org/wiki/Downloads "Download VirtualBox")を開き、"VirtualBox Plaform Packages"の中から"Windows hosts"をクリックし、インストーラをダウンロード。  

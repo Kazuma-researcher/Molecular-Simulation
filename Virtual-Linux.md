@@ -7,7 +7,7 @@ Windows11にはLinux環境を提供するための仮想マシンである**Wind
 
 ## VirtualBoxのインストール
 [VirtualBoxのダウンロードページ](https://www.virtualbox.org/wiki/Downloads "Download VirtualBox")を開き、「VirtualBox Plaform Packages」の中から「Windows hosts」をクリックし、インストーラをダウンロード。  
-![タイトルなし](https://github.com/user-attachments/assets/15a63997-fbbe-4eaf-81e0-a2c8a4881605)
+![タイトルなし](https://github.com/user-attachments/assets/6cc80717-8179-4468-b224-6a55d77fcf29)
 
 インストーラを実行し、画面の指示に従ってインストールを進める。基本的に何も変更しなくてよい。インストール完了後、VirutalBoxが自動的に開く。  
 

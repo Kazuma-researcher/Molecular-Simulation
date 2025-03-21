@@ -13,6 +13,8 @@ Windows11にはLinux環境を提供するための仮想マシンである**Wind
 
 ## Ubuntuのダウンロードと起動
 Ubuntuは最も広く使用されているLinuxディストリビューションである。Ubuntuの日本語Remix版が[こちらのサイト](https://www.ubuntulinux.jp/News/ubuntu2204-ja-remix "Ubuntu 22.04 LTS 日本語 Remix リリース")で配布されている。いずれかのミラーサイトを開き、.isoのファイルをダウンロードする。これが、仮想マシンにロードするUbuntuのイメージファイルである。  
+![タイトルなし](https://github.com/user-attachments/assets/60149a19-d218-41bf-be03-6c80e63f8728)
+
 
 VirtualBoxを開き、"新規"をクリック。  
 

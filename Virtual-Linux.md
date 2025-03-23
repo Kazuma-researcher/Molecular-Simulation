@@ -13,7 +13,7 @@ Windows11にはLinux環境を提供するための仮想マシンである**Wind
 
 インストーラを実行し、画面の指示に従ってインストールを進める。基本的に何も変更しなくてよい。インストール完了後、VirutalBoxが自動的に開く。  
 
-## Ubuntuのダウンロードと起動
+## UbuntuのダウンロードとVirtualBox上での起動
 Ubuntuは最も広く使用されているLinuxディストリビューションである。Ubuntuの日本語Remix版が[こちらのサイト](https://www.ubuntulinux.jp/News/ubuntu2204-ja-remix "Ubuntu 22.04 LTS 日本語 Remix リリース")で配布されている。  
 
 ![タイトルなし](https://github.com/user-attachments/assets/60149a19-d218-41bf-be03-6c80e63f8728)

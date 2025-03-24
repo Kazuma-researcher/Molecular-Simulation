@@ -20,7 +20,7 @@ GROMACSのインストールはターミナルを用いたコマンド操作で�
 $mkdir ~/GROMACS
 ```
 
-次に、以下のコマンドを実行し、「ダウンロード」ディレクトリに移動する。※仮想Linux環境の構築で[Ubuntuの日本語化](./Virtual-Linux.md/#L78)  
+次に、以下のコマンドを実行し、「ダウンロード」ディレクトリに移動する。※仮想Linux環境の構築で[Ubuntuの日本語化](https://github.com/Kazuma-researcher/Molecular-Simulation/blob/5cb10d49663b86a2c77e4bfe8710d1978c5001fa/Virtual-Linux.md?plain=1#L78)  
 
 ```bash
 $cd ~/ダウンロード

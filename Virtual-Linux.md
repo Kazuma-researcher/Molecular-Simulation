@@ -94,7 +94,7 @@ powershellを起動し、以下のコマンドを実行してドライバがイ�
 デフォルトのキーボード割り当ては日本仕様になっていないため、これを変更する必要がある。メニューからターミナルを起動し、以下のコマンドを実行。  
 
 ```bash
-$ sudo dpkg-reconfigure keyboard-configuration
+sudo dpkg-reconfigure keyboard-configuration
 ```
 以下のようにいくつかの画面が出るので、画像の通り選択。  
 

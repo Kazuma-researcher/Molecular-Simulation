@@ -102,5 +102,13 @@ $ sudo dpkg-reconfigure keyboard-configuration
 <img src="https://github.com/user-attachments/assets/e8e59684-9163-48b5-9875-f47d44b21ab7" width="40%"> <img src="https://github.com/user-attachments/assets/b0d480ef-8c13-48da-ba43-e1f29eeb4d0b" width="40%">
 <img src="https://github.com/user-attachments/assets/3f8822ab-403e-48d8-949e-e6404ea789c6" width="40%"> <img src="https://github.com/user-attachments/assets/a73c2b2d-f486-43f5-9dd4-7252826b373f" width="40%">
 
+右上の電源マークの中の「設定」をクリックし、「キーボード」を開く。「入力ソース」の＋マークをクリック。  
 
+![タイトルなし](https://github.com/user-attachments/assets/cd732c3b-52bc-4f1b-b0fe-b0a9548968ac)
+
+「日本語」をクリックし、「日本語」を選択して「追加」をクリック。その後、再起動。
+
+![タイトルなし](https://github.com/user-attachments/assets/0e83f76c-5c56-4b27-b26a-b6bc8d0aed83)　![タイトルなし](https://github.com/user-attachments/assets/b6da1ec4-c309-49cb-8e65-31d928222168)
+
+以上でキーボード割り当ての設定完了。ホストマシン（WindowsPC）と同じようにキーボード入力ができるようになる。
 

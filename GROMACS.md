@@ -50,3 +50,27 @@ $tar -xzvf gromacs-XXX.tar.gz
 $cd gromacs-XXX
 ```
 
+以下のコマンドを実行し、GROMACSのビルド先フォルダとインストール先フォルダを作っておく。
+
+```bash
+$mkdir build
+$mkdir gmx_install
+```
+
+以下のコマンドを実行し、「build」ディレクトリに移動する。
+
+```bash
+$cd build
+```
+
+以下のコマンドを実行し、GROMACSのインストールする際のオプションを指定する。すべてのオプションについての詳細は筆者もよくわからない。`-DCMAKE_INSTALL_PREFIX`ではインストール先のディレクトリを指定している。`-DGMX_MPI`は並列計算を仕様するかどうか、`-DGMX_GPU`GPUを使用した計算を行うためのオプションである。ここでは手元のPCでの練習という位置づけなのでいずれもOFFとしているが、スパコンを仕様した高速計算を行う場合はこれらをONとする。高速計算を行うためのcmakeのオプションは[こちらのページ](https://onefive13.github.io/homepage/GROMACS/GROMACSinstall.html "GROMACSのインストール")を参照。
+
+```bash
+cmake ../ \
+-DGMX_BUILD_OWN_FFTW=ON \
+-DREGRESSIONTEST_DOWNLOAD=ON \
+-DCMAKE_INSTALL_PREFIX=${HOME}/GROMACS/gromacs-XXX/gmx_install \
+-DGMX_MPI=OFF \
+-DGMX_DOUBLE=OFF \
+-DGMX_GPU=OFF
+```

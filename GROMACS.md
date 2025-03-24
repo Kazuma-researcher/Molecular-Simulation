@@ -9,15 +9,19 @@ GROMACSのインストールはターミナルを用いたコマンド操作で�
 
 ![タイトルなし](https\://github.com/user-attachments/assets/08620374-77b4-4f20-bcbc-13ecd32c3166)
 
-「Source code」の「<span>https://ftp.gromacs.org/gromacs/gromacs-XXX.tar.gz</span>」をクリックする。「gromacs-XXX.tar.gz」という名前のファイルがダウンロードされるはずである。XXXはバージョン番号。
+「Source code」の`https://ftp.gromacs.org/gromacs/gromacs-XXX.tar.gz`をクリックする。「gromacs-XXX.tar.gz」という名前のファイルがダウンロードされるはずである。XXXはバージョン番号。
 
 ![タイトルなし](https://github.com/user-attachments/assets/35e235ee-0574-4321-85ac-e7f03ff72515)
 
 
-ターミナルを開き、以下のコマンドを実行して、ホームディレクトリに「GROMACS」という名前のフォルダを作成する。  
+ターミナルを開き、以下のコマンドを順に実行して、ホームディレクトリに「GROMACS」という名前のフォルダを作成する。  
 
 ```bash
 $mkdir ~/GROMACS
 ```
 
+次に、以下のコマンドを実行し、「ダウンロード」ディレクトリに移動する。  
 
+```bash
+$cd ~/ダウンロード
+```

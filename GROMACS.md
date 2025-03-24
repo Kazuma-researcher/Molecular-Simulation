@@ -50,7 +50,7 @@ $tar -xzvf gromacs-XXX.tar.gz
 $cd gromacs-XXX
 ```
 
-以下のコマンドを実行し、GROMACSのビルド先フォルダとインストール先フォルダを作っておく。
+以下のコマンドを実行し、GROMACSのビルド先フォルダとインストール先フォルダを作っておく。   
 
 ```bash
 $mkdir build
@@ -63,10 +63,11 @@ $mkdir gmx_install
 $cd build
 ```
 
-以下のコマンドを実行し、GROMACSのインストールする際のオプションを指定する。すべてのオプションについての詳細は筆者もよくわからない。`-DCMAKE_INSTALL_PREFIX`ではインストール先のディレクトリを指定している。`-DGMX_MPI`は並列計算を仕様するかどうか、`-DGMX_GPU`GPUを使用した計算を行うためのオプションである。ここでは手元のPCでの練習という位置づけなのでいずれもOFFとしているが、スパコンを仕様した高速計算を行う場合はこれらをONとする。高速計算を行うためのcmakeのオプションは[こちらのページ](https://onefive13.github.io/homepage/GROMACS/GROMACSinstall.html "GROMACSのインストール")を参照。
+以下のコマンドを実行し、cmakeを行う。-が付いている部分では、GROMACSのインストールをする際のオプションを指定している。すべてのオプションについての詳細は筆者もよくわからない。`-DCMAKE_INSTALL_PREFIX`ではインストール先のディレクトリを指定している。  
+`-DGMX_MPI`は並列計算を仕様するかどうか、`-DGMX_GPU`はGPUを使用した計算を行うためのオプションである。ここでは手元のPCでの練習という位置づけなのでいずれもOFFとしているが、スパコンを仕様した高速計算を行う場合はこれらをONとする。高速計算を行うためのオプションは[こちらのページ](https://onefive13.github.io/homepage/GROMACS/GROMACSinstall.html "GROMACSのインストール")を参照。
 
 ```bash
-cmake ../ \
+$cmake ../ \
 -DGMX_BUILD_OWN_FFTW=ON \
 -DREGRESSIONTEST_DOWNLOAD=ON \
 -DCMAKE_INSTALL_PREFIX=${HOME}/GROMACS/gromacs-XXX/gmx_install \
@@ -74,3 +75,25 @@ cmake ../ \
 -DGMX_DOUBLE=OFF \
 -DGMX_GPU=OFF
 ```
+
+以下のコマンドを実行する。
+
+```bash
+$make -j 4
+```
+
+以下のコマンドを実行し、GROMACSをインストールする。
+
+```bash
+$make install
+```
+
+上述したようにGROMACSのインストール先を「gmx_install」ディレクトリに指定したので、インストールが成功していればこのディレクトリにGROMACSの実行ファイルが存在するはずである。左メニューから「ファイル」を開き、`ホーム/GROMACS/gromacs-XXX/gmx_install`の中に「bin」などのフォルダがあればOK。「bin」の中に「gmx」という名前でGROMACSの実行ファイルが入っている。  
+以下のコマンドを実行し、.bashrcファイルにGROMACSのパスを通す。これにより、どのディレクトリからでもGROMACSコマンドを実行することができる。  
+
+```bash
+$export PATH=${HOME}/GROMACS/gromacs-XXX/gmx_install/bin:${PATH}
+```
+
+>[!NOTE]
+>パスとはファイルやディレクトリの場所を指定する文字列であり、.bashrcファイルに書かれているパスをPATHや環境変数と呼ぶ。通常`$gmx`のように特定の実行ファイル名をコマンド入力して実行する際、今いるディレクトリ（カレントディレクトリ）に該当の実行ファイルがなければ実行できない。しかし、.bashrcファイルのPATHにその実行ファイルのパスを記載していれば、カレントディレクトリに該当のファイルが無くても実行することができる。したがって、PATHに書かれているディレクトリにある実行ファイルは、どこのディレクトリからでも実行することが可能である。これは、コンピュータが実行コマンドを受けた際、まずカレントディレクトリに該当の実行ファイルがあるかを探し、なければPATHに書かれているディレクトリを探しに行くためである。

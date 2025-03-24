@@ -26,9 +26,27 @@ $mkdir ~/GROMACS
 $cd ~/ダウンロード
 ```
 
-以下のコマンドを実行し、ダウンロードしたgromacsのファイルを「GROMACS」ディレクトリに移動させる。  
+以下のコマンドを実行し、ダウンロードしたgromacsのファイルを上記で作成した「GROMACS」ディレクトリに移動させる。  
 
 ```bash
 $mv gromacs-XXX.tar.gz ~/GROMACS
+```
+
+以下のコマンドを実行し、「GROMACS」ディレクトリに移動する。  
+
+```bash
+$cd ~/GROMACS
+```
+
+このディレクトリ内で`ls`コマンドを実行すれば、移動させたGROMACSの存在が確認できるはずである。次に、以下のコマンドを実行し、「gromacs-XXX.tar.gz」ファイルを展開する。  
+
+```bash
+$tar -xzvf gromacs-XXX.tar.gz
+```
+
+これにより、「gromacs-XXX」というフォルダができているはずなので、以下のコマンドでそのディレクトリに移動する。
+
+```bash
+$cd gromacs-XXX
 ```
 

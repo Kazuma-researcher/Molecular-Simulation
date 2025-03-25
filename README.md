@@ -18,7 +18,7 @@ MDシミュレーションそのものだけでなく、MDの導入に必要な�
   - PyMOL
   - Packmol
   - VMD
-  - CHARMMGUI(オンライン)
+  - CHARMM-GUI(オンライン)
 - その他
   - Miniconda3
   - Cellulose Builder
